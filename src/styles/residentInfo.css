@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Shadows+Into+Light&display=swap');
+
+
+.characterBox {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 332px;
+    height: 400px;
+    border-radius: 1rem;
+    background-color: #252325;
+    transition: .5s;
+    border: 2px solid #F0E14A;
+    /* background-image: url('../assets/Ray.gif');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.characterBox:hover {
+    background-image: url('../assets/Ray.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    transform: scale(1.1);
+}
+
+.characterBox figure {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid #252325;
+    
+}
+
+.status {
+    position: absolute;
+    top: 1rem;
+    width: 7rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 0 10px 10px 0;
+}
+
+.Alive {
+    background-color: rgb(0, 192, 0);
+}
+
+.Dead {
+    background-color: red;
+}
+
+.unknown {
+    background-color: gray;
+}
+
+.status span:nth-child(2) {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+
+.name {
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    left: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.status span {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.characterInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.characterInfo span {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
